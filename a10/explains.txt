@@ -1,0 +1,9 @@
+1) when  we remove the using namespace std: I get the following errors:
+unknown type name "string" // the compiler does not know what string is,use std::string to fix
+undeclared identifier "cin" and "cout" and "endl" // cin and cout and "endl" do not exist. use std::cout and std::cin instead
+
+
+2)the "name" identifier only exists inside of the Critter class. if the
+    class "namespace" is not defined, the compiler does not understand that it is
+    supposed to use the "name" of an instance of the Critter class. include this function
+    as one of the public methods inside of the Critter class declaration to avoid this problem
